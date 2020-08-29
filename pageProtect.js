@@ -3,7 +3,6 @@ function loginCheck() {
         function() {
             if (sessionStorage.getItem("notLoggedIn")) {
                 window.location.href = "index.html";
-                document.getElementById("response").innerHTML = "You must login in order to access the database";
             }
         }, 10
     )
@@ -12,7 +11,6 @@ function loginCheck() {
             if (sessionStorage.getItem("loggedIn")) {
             } else {
                 window.location.href = "index.html";
-                document.getElementById("response").innerHTML = "You must login in order to access the database";
             }
         }, 20
     )
@@ -25,5 +23,4 @@ function logOut() {
     sessionStorage.setItem("notLoggedIn", "true");
     sessionStorage.removeItem("loggedIn");
     window.location.href = "index.html";
-    document.getElementById("response").innerHTML = "You were successfully logged out.";
 };
