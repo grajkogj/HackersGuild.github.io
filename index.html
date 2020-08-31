@@ -5,10 +5,10 @@
         <title>
             Hackers Guild Resource Database
         </title>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <link rel="stylesheet" type="text/css" href="generalStyles.css">
-        <script src="loginscript.js"></script>
-        <script src="pageProtect.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/generalStyles.css">
+        <script src="javascript/loginscript.js"></script>
+        <script src="javascript/pageProtect.js"></script>
     </head>
 
     <body onload="indexLogOut()">
@@ -35,7 +35,7 @@
                 </h2>
                 <input type="password" id="id-input" class="textInput" placeholder=" Enter your ID here">
                 <input type="password" id="password-input" class="textInput" placeholder=" Enter your password here">
-                <input type="button" value="Submit" class="button" onclick="login()">
+                <input type="button" id="submitButtonLogin" value="Submit" class="button" onclick="login()">
             </div>
 
             <center>
