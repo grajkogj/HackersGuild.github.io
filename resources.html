@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>
+            Resources Home
+        </title>
+        <link rel="stylesheet" href="styles/generalStyles.css">
+        <link rel="stylesheet" type="text/css" href="styles/resources.css">
+        <script src="javascript/pageProtect.js"></script>
+        <script src="javascript/main.js"></script>
+    </head>
+
+    <body onload="loginCheck()">
+
+        <div class="header">
+            <div id="logo" style="display: inline-block; align-self: center;">
+                <input type="image"  src="icons/hackersGuildLogo.jpg" onclick="logoClick()" width="70px" height="70px">
+            </div>
+            <div id="title">
+                <font color="white">
+                    <h1>
+                         Hackers Guild Resource Database
+                    </h1>
+                </font>
+            </div>
+                <div class="dropdown">
+                    <button onclick="dropdown()" class="dropbtn">Guide</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="chat.html">Chat</a>
+                      <a href="encrypt.html">Encryption Services</a>
+                    </div>
+                </div>
+            <div id="lock-button">
+                <input type="image" width="50px" height="60px" src="icons/lock-icon.jpg" onclick="logOut()">
+            </div>
+        </div>
+
+        <div id="main-page">
+
+            <div id="discord-widget">
+                <iframe src="https://discord.com/widget?id=746918967087464448&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+
+            <div id="temp-xray-link">
+                <a class="button" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())">
+                    Working X-Ray goggles (drag and drop me in your bookmarks bar)
+                </a> 
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>
+            Hackers Guild Chat
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles/chat.css">
+        <link rel="stylesheet" type="text/css" href="styles/generalStyles.css">
+        <script src="javascript/main.js"></script>
+        <script src="javascript/pageProtect.js"></script>
+    </head>
+
+    <body onload="loginCheck()">
+
+        <div class="header">
+            <div id="logo" style="display: inline-block; align-self: center;">
+                <input type="image"  src="icons/hackersGuildLogo.jpg" onclick="logoClick()" width="70px" height="70px">
+            </div>
+            <div id="title">
+                <font color="white">
+                    <h1>
+                         Hackers Guild Resource Database
+                    </h1>
+                </font>
+            </div>
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">Guide</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="chat.html">Chat</a>
+                  <a href="encrypt.html">Encryption Services</a>
+                </div>
+            </div>
+            <div id="lock-button">
+                <input type="image" width="50px" height="60px" src="icons/lock-icon.jpg" onclick="logOut()">
+            </div>
+        </div>
+
+        <div id="main-page">
+
+            <div id="chat-container">
+                
+                
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

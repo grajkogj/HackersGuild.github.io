@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>
+            Hackers Guild Resource Database
+        </title>
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/generalStyles.css">
+        <script src="javascript/loginscript.js"></script>
+        <script src="javascript/pageProtect.js"></script>
+    </head>
+
+    <body onload="indexLogOut()">
+        
+        <div id="login-section">
+
+            <div id="login-header">
+                <font color="white">
+                    <h1 id="login-title">
+                        Hackers Guild 
+                    </h1>
+                </font>
+                <font color="white">
+                    <p>
+                        Resource Database
+                    </p>
+                </font>
+            </div>
+
+            <div id="login-input">
+                <br>
+                <h2>
+                    Please Log In
+                </h2>
+                <input type="password" id="id-input" class="textInput" placeholder=" Enter your ID here">
+                <input type="password" id="password-input" class="textInput" placeholder=" Enter your password here">
+                <input type="button" id="submitButtonLogin" value="Submit" class="button" onclick="login()">
+            </div>
+
+            <center>
+                <br>
+                <p id="response">
+                         
+                </p>
+            </center>
+
+        </div>
+
+    </body>
+
+</html>
