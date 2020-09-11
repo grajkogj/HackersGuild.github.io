@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
     <head>
         <title>
-            Resources Home
+            Hackers Guild Resource Database
         </title>
-        <link rel="stylesheet" href="generalStyles.css">
-        <link rel="stylesheet" type="text/css" href="resources.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="generalStyles.css">
+        <script src="loginscript.js"></script>
         <script src="pageProtect.js"></script>
-        <script src="main.js"></script>
     </head>
 
-    <body onload="loginCheck()">
+    <body onload="indexLogOut()">
+        
+        <div id="login-section">
 
-        <div class="header">
-            <div id="logo" style="display: inline-block; align-self: center;">
-                <input type="image"  src="hackersGuildLogo.jpg" onclick="logoClick()" width="70px" height="70px">
-            </div>
-            <div id="title">
+            <div id="login-header">
                 <font color="white">
-                    <h1>
-                         Hackers Guild Resource Database
+                    <h1 id="login-title">
+                        Hackers Guild 
                     </h1>
                 </font>
-            </div>
-                <div class="dropdown">
-                    <button onclick="dropdown()" class="dropbtn">Guide</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="chat.html">Chat</a>
-                      <a href="encrypt.html">Encryption Services</a>
-                    </div>
-                </div>
-            <div id="lock-button">
-                <input type="image" width="50px" height="60px" src="lock-icon.jpg" onclick="logOut()">
-            </div>
-        </div>
-
-        <div id="main-page">
-
-            <div id="discord-widget">
-                <iframe src="https://discord.com/widget?id=746918967087464448&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <font color="white">
+                    <p>
+                        Resource Database
+                    </p>
+                </font>
             </div>
 
-            <div id="temp-xray-link">
-                <a class="button" href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())">
-                    Working X-Ray goggles (drag and drop me in your bookmarks bar)
-                </a> 
+            <div id="login-input">
+                <br>
+                <h2>
+                    Please Log In
+                </h2>
+                <input type="password" id="id-input" class="textInput" placeholder=" Enter your ID here">
+                <input type="password" id="password-input" class="textInput" placeholder=" Enter your password here">
+                <input type="button" id="submitButtonLogin" value="Submit" class="button" onclick="login()">
             </div>
-            <div id="temp-paperclipsGame-link">
-                <a class="button" href="https://paperclips.hmshackers.gq">
-                    Working Paperclips Game
-                </a> 
-            </div>
+
+            <center>
+                <br>
+                <p id="response">
+                         
+                </p>
+            </center>
 
         </div>
 
