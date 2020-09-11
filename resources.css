@@ -57,3 +57,9 @@ body {
     top: 115px;
     left: 40px;
 }
+#temp-paperclipsGame-link {
+    display: inline-block;
+    position: absolute;
+    top: 115px;
+    left: 550px;
+}
